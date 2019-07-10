@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+
+        /* STYLING for the items */
+        .d1{
+            background:lightsalmon;
+
+            /* CREATE GRID AREA FOR darth */
+            /* grid-area: darth; */
+
+            /* MAKE DARTH A HEADER */
+            /* grid-area: 1/1/1/4; */
+
+            /* NOW LET'S LOOK AT THE CONTAINER AGAIN
+            TO REPEAT GRID-TEMPLATE-ROW */
+            }
+        .d2{
+            background:lightskyblue;
+
+            /* CREATE justify-items HERE */
+            /* justify-self: center; */
+            /* justify-self: end; */
+            /* justify-self: start; */
+            /* justify-self: stretch; */
+
+            /* GO TO THE COUNT IN D3 */
+
+            /* CREATE GRID AREA FOR r2 */
+            /* grid-area: r2; */
+
+
+        }
+        .d3{
+            background:PaleTurquoise;
+
+            /* CREAT align-self HERE */
+            /* align-self: start; */
+            /* align-self: center; */
+            /* align-self: end; */
+            /* align-self: stretch; */
+
+            /* GO TO THE CONTAINER TO justify-items */
+
+            /* CREATE GRID AREA FOR count */
+            /* grid-area: count; */
+        }
+        .d4{
+            background:LightPink;
+
+            /* CREATE GRID AREA FOR elmo */
+            /* grid-area: elmo; */
+
+        }
+        .d5{
+            background:PaleGreen;
+            
+
+            /* HERE CREATE A grid-column: <START POINT> / <END POINT> */
+            /* grid-column: 2/4; */
+            
+            /* HERE CREATE A grid-row: <START POINT> / <END POINT>  */
+            /* grid-row: 2/4; */
+
+            /* GO to D2 STYLING FOR THE R2-D2 DIV to work with justify-self */
+            
+            /* CREATE GRID AREA FOR oscar */
+            /* grid-area: oscar; */
+
+            /* COMMENT OUT THE grid-area properities above */
+            /* NOW ADD grid-area just for this div */
+            /* grid-area: horizontal line to start at / 
+            vertical line to start at / 
+            horizontal line to end at / 
+            vertical line to end at; */
+
+            /* grid-area: 3/1/4/4; */
+
+            /* ADD A HEADER STYLE TO THE DARTH DIV USING 
+            THE SAME GRID AREA TYPE OF FORMATTING */
+        }
+
+
+        /* STYLING center the images */
+        .pic-m {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        
+        /* STYLING for the parent container for grid */
+        .container {
+            font-size: 40px;
+            min-height: 300px;
+            width: 100%;
+            background: LightGray;
+            /* PLAYGROUND CSS BELOW HERE */
+            /* CSS grid allows you to not only to adjust one dimension but two dimensions */
+            
+            /* ADD YOUR GRID*/
+            display: grid;
+
+        /* ADD SOME COLUMNS */
+            /* grid-template-columns: 100px 100px; */
+            /* grid-template-columns: 50% 50%; */
+            /* grid-template-columns: 5em 10em 5em; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+
+        /* ADD SOME ROWS */
+            /* grid-template-rows: 50px 50px; */
+            /* grid-template-rows: 30% 30% 30%; */
+            /* grid-template-rows: 5em 10em; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+
+        /* ADD SOME SPACE AROUND YOUR BOXES WITH GRID GAP */
+        
+        /* STAT BY ADDING SOME ROW GAP */
+            /* grid-row-gap: 10px; */
+            /* grid-row-gap: 10%; */
+            /* grid-row-gap: 1em; */
+
+        /* THEN COLUMN GAP */
+            /* grid-column-gap: 10px; */
+            /* grid-column-gap: 10%; */
+            /* grid-column-gap: 1em; */
+
+        /* SHORTHAND FOR BOTH ROW AND COLUMN IS 
+            grid-gap: <ALL SIDES GAP>;
+            OR
+            grid-gap: <ROW GAP> <COLUMN GAP>;*/
+            grid-gap: 10px;
+            /* grid-gap: 1em 2em; */
+             /* grid-gap: 10px 20px; */
+
+        /* WE'LL COME BACK TO THE CONTAINER LATER
+        NEXT LET'S LOOK AT THE FIFTH ITEM ABOVE ^^^*/
+            
+
+        /* CREATE justify-items to apply styling to all divs*/
+            /* justify-items: start; */
+            /* justify-items: center; */
+            /* justify-items: end; */
+            /* justify-items: stretch; */
+
+        /* CREATE align-items to apply styling to all divs*/
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: stretch; */
+
+        /* CREATE a grid-template area */
+            /* Note
+            Every word in the code represents a cell and 
+            every pair of quotation marks represent a row.
+
+            In addition to custom labels, you can use a period (.) 
+            to designate an empty cell in the grid. */
+            /* grid-template-areas:
+                "darth darth darth"
+                "r2 count elmo"
+                "oscar oscar oscar"; */
+
+            /* WHY ISN'T IT WORKING? */
+
+        /* GRID-AREA and the custom names must be added to the items */
+            
+        /* INTRODUCTION OF REPEAT()
+            IN THE grid-template columns and rows you 
+            maY notice some repetition. 
+
+        USE repeat() to rework one of the 
+            scenarios above*/
+
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-rows: repeat(3, 1fr); */
+
+        /* INTRODUCTION OF MINMAX() */
+            /* YOU CAN USE minmax(<min-number>, <max-number>)
+            within the grid-template to automatically 
+            resize div's based on a the screen size */
+
+        /* USE minmax() to reset the min and max sizes of all
+            the div's. */
+            /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+            
+        /* INTRODUCTION TO AUTO-FILL - 
+            The repeat function comes with an option called auto-fill. 
+            This allows you to automatically insert as many 
+            rows or columns of your desired size as possible 
+            depending on the size of the container.  */
+
+        /* USE AUTO-FILL TO FIX THE PROBLEM WITH minmax above.  */
+
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+
+        /* INTRODUCTION TO AUTO-FIT
+            Auto-fit works almost identically to auto-fill. 
+            
+            The only difference is that when the container's size 
+            exceeds the size of all the items combined, 
+            auto-fill keeps inserting empty rows or columns and 
+            pushes your items to the side, while auto-fit collapses 
+            those empty rows or columns and stretches your items 
+            to fit the size of the container. */
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            
+            /* GO TO THE MEDIA QUERIES BELOW */
+
+
+        }
+
+    /* MEDIA QUERIES
+        Media Queries allow you to rearrange your items 
+        when the screen reaches a certain viewport size. */
+
+    /* UNCOMMENT THE GRID-AREA FOR EACH OF THE DIVS 
+    ADD MEDIA QUERY BELOW */
+
+        /* @media (min-width: 500px){
+            .container{
+                grid-template-columns: auto 1fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas: 
+                    "darth darth darth"
+                    "r2 r2 r2"
+                    "count count count"
+                    "elmo elmo elmo"
+                    "oscar oscar oscar"
+        }
+
+        @media (min-width: 600px){
+            .container{
+                grid-template-areas:
+                    "r2 darth darth"
+                    "r2 count count"
+                    "r2 elmo elmo"
+                    "r2 oscar oscar"
+        }
+
+        @media (min-width: 800px){
+            .container{
+                grid-template-areas: 
+                    "darth darth darth"
+                    "r2 count elmo"
+                    "oscar oscar oscar"
+            }
+        } */
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        
+    </header>
+
+    <!-- ORGANZIATION parent div -->
+    <div class="container">
+
+        <!-- ORGANIZATION children div's (5 items) -->
+        <div class="d1">
+            <img src="/assets/darth_vader.jpg" alt="darth vader" width="50px" class="pic-m">
+        </div>
+        <div class="d2">
+            <img src="/assets/r2-d2.jpeg" alt="r2-d2" width="50px" class="pic-m">
+        </div>
+        <div class="d3">
+            <img src="/assets/count.png" alt="the count" width="50px" class="pic-m">
+            
+        </div>
+        <div class="d4">
+            <img src="/assets/elmo.jpg" alt="elmo" width="50px" class="pic-m">
+        </div>
+        <div class="d5">
+            <img src="/assets/oscar.jpg" alt="oscar the grouch" width="50px" class="pic-m">
+        </div>
+    </div>
+    
+</body>
+</html>

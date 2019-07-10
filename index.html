@@ -1,43 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CSS Grids</title>
-  <style>
-    .wrapper{
-      display:grid;
-      grid-template-columns: 70% 30%;
-      /*
-      grid-column-gap:1em;
-      grid-row-gap:1em;
-      */
-      grid-gap:1em;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .d1{background:LightSkyBlue;}
+        .d2{background:LightSalmon;}
+        .d3{background:PaleTurquoise;}
+        .d4{background:LightPink;}
+        .d5{
+            background:PaleGreen;
+            
 
-    .wrapper > div{
-      background:#eee;
-      padding:1em;
-    }
-    .wrapper > div:nth-child(odd){
-      background:#ddd;
-    }
+            /* HERE CREATE A grid-column: <START POINT> / <END POINT> */
+            /* grid-column: 2/4; */
+            
+            /* HERE CREATE A grid-row: <START POINT> / <END POINT>  */
+            /* grid-row: 2/4; */
 
-  </style>
+        }
+
+        .pic-m {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        
+        .container {
+            font-size: 40px;
+            min-height: 300px;
+            width: 100%;
+            background: LightGray;
+            /* PLAYGROUND CSS BELOW HERE */
+            
+            /* ADD YOUR GRID*/
+            display: grid;
+
+            /* ADD SOME COLUMNS */
+            /* grid-template-columns: 100px 100px; */
+            /* grid-template-columns: 50% 50%; */
+            /* grid-template-columns: 5em 10em 5em; */
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* ADD SOME ROWS */
+            /* grid-template-rows: 50px 50px; */
+            /* grid-template-rows: 30% 30% 30%; */
+            /* grid-template-rows: 5em 10em; */
+            grid-template-rows: 1fr 1fr 1fr;
+
+            /* ADD SOME SPACE AROUND YOUR BOXES WITH GRID GAP */
+        
+            /* STAT BY ADDING SOME ROW GAP */
+            /* grid-row-gap: 10px; */
+            /* grid-row-gap: 10%; */
+            /* grid-row-gap: 1em; */
+
+            /* THEN COLUMN GAP */
+            /* grid-column-gap: 10px; */
+            /* grid-column-gap: 10%; */
+            /* grid-column-gap: 1em; */
+
+            /* SHORTHAND FOR BOTH ROW AND COLUMN IS 
+            grid-gap: <ALL SIDES GAP>;
+            OR
+            grid-gap: <ROW GAP> <COLUMN GAP>;*/
+            /* grid-gap: 10px; */
+            /* grid-gap: 1em 2em; */
+             grid-gap: 10px 20px;
+
+            /* NEXT LET'S LOOK AT THE FIFTH ITEM ABOVE ^^^*/
+
+
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
-    </div>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
-    </div>
 
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quo eveniet placeat. In porro, repudiandae ipsum voluptatibus ratione enim accusantium rem consequatur ab? Alias tenetur ratione quibusdam accusantium aut quis totam! Voluptas labore officiis, unde sequi ad fuga, ex assumenda dolorem placeat atque excepturi ipsa architecto dolores dignissimos quod quibusdam quasi repellat vero cum perspiciatis laboriosam qui sint exercitationem quisquam. Quisquam suscipit fugiat doloremque quasi ad debitis dolor quaerat nihil aliquam at ducimus consequuntur repudiandae numquam eligendi, fugit, excepturi doloribus!
+    <div class="container">
+        <div class="d1">
+            <img src="/assets/r2-d2.jpeg" alt="darth vader" width="50px" class="pic-m">
+        </div>
+        <div class="d2">
+            <img src="/assets/darth_vader.jpg" alt="r2-d2" width="50px" class="pic-m">
+        </div>
+        <div class="d3">
+            <img src="/assets/count.png" alt="the count" width="50px" class="pic-m">
+            
+        </div>
+        <div class="d4">
+            <img src="/assets/elmo.jpg" alt="elmo" width="50px" class="pic-m">
+        </div>
+        <div class="d5">
+            <img src="/assets/oscar.jpg" alt="oscar the grouch" width="50px" class="pic-m">
+        </div>
     </div>
-    <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem sit similique sequi veritatis quas soluta nam alias maxime. Quos rerum soluta neque, incidunt eius illum amet laboriosam nostrum vel.
-    </div>
-  </div>
+    
 </body>
 </html>

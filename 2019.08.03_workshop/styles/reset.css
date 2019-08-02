@@ -1,0 +1,22 @@
+/* 
+root is another way to say the 
+top of the tree or 
+the <html> element
+
+You set it once and it applies everywhere
+*/
+:root { font: 20px/1.2 "Roboto", sans-serif; } /* or html */
+
+
+/* we don't want the properties to be automatically set */
+body,
+body * {
+	margin:          unset;
+	box-sizing:      unset;
+	padding:         unset;
+	font-size:       unset;
+	color:           unset;
+	text-decoration: unset;
+}
+
+figure * { display: block; }

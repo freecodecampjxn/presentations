@@ -84,6 +84,12 @@
             THE SAME GRID AREA TYPE OF FORMATTING */
         }
 
+        .d6{
+            background: lightgoldenrodyellow;
+            grid-column: 3/4;
+            grid-row: 2/4;
+        }
+
 
         /* STYLING center the images */
         .pic-m {
@@ -107,10 +113,10 @@
             display: grid;
 
         /* ADD SOME COLUMNS */
-            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(autofit, 150px 200px); */
             /* grid-template-columns: 50% 50%; */
             /* grid-template-columns: 5em 10em 5em; */
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
 
             /* IN CSS GRID FR, OR FRACTIONAL, IS ENCOURAGED */
 
@@ -118,7 +124,7 @@
             /* grid-template-rows: 50px 50px; */
             /* grid-template-rows: 30% 30% 30%; */
             /* grid-template-rows: 5em 10em; */
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
 
         /* ADD SOME SPACE AROUND YOUR BOXES WITH GRID GAP */
         
@@ -142,7 +148,7 @@
 
         /* ADD SOME HEIGHT TO THE ROWS USING grid-auto-rows */
             /* grid-auto-rows: 100px; */
-            /* grid-auto-rows: 25%; */
+            /* grid-auto-rows: 50%; */
             /* grid-auto-rows: 3em; */
 
 
@@ -290,6 +296,10 @@
         </div>
         <div class="d5">
             <img src="/2019_07_10_meetup/assets/oscar.jpg" alt="oscar the grouch" width="50px" class="pic-m">
+        </div>
+
+        <div class='d6'>
+            <img src="/2019_07_10_meetup/assets/captain_planet.jpeg" alt="captain planet" width='50px' class='pic-m'> 
         </div>
     </div>
     

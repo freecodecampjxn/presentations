@@ -1,38 +1,41 @@
+<!-- 
+    Review your mockup
+Assignment:
+    1. apply formatting to the p elements as practice
+    2. access the id 'the-cosmos' in the style and apply a color as practice
+    3. apply a margin to the bottom of the h2 and last p.
+    4. For margin-bottom use rem to change the sizing
+-->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>hello, formatting!</title>
+		<title>hello, text!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
         <link rel="stylesheet" href="styles/reset.css">
-        <!-- <link rel="stylesheet" href="styles/7_debug.css"> -->
+        <link rel="stylesheet" href="styles/7_debug.css">
 		<link rel="stylesheet" href="styles/7_article.css">
 		<link rel="stylesheet" href="styles/article-image.css">
 		<style>
+/* 
+em: 1em is the same as the font-size of the current element.
+rem: The rem (root em) works in exactly the same way as the em, except that it will always equal the size of the default base font-size 
+*/
 
 h2, p:not(:last-child) { margin-bottom: 2.4rem; }
-
-h1   { font: 700 2.0rem/1.2 "Roboto"; }
-h2   { font: 400 1.5rem/1.2 "Roboto"; }
-time { font: 700 1.0rem/1.2 "Roboto"; }
-h3   { font: 700 1.0rem/1.2 "Roboto"; }
-p    { font: 400 1.0rem/1.5 "Roboto"; }
-
-a { box-shadow: inset 0 -0.25em black; }
-
-@media (max-width: 8.5in) { :root { font-size: 18px; } }
-@media (max-width: 5.0in) { :root { font-size: 16px; } }
 
         </style>
 	</head>
     <body>
+        <!-- article has an id -->
 		<article id="the-cosmos">
 			<h1><a href="#the-cosmos">The <em>Cosmos</em> is all there is</a></h1>
 			<h2>Or ever was, or ever will be</h2>
 
 			<time datetime="03-09-2014">MAR. 9, 2014</time>
 			<p>
+                <!-- include another formatting element in this p element -->
 				<em>A generation ago</em>, the astronomer <a href="https://en.wikipedia.org/wiki/carl_sagan">Carl Sagan</a> stood here and launched hundreds of millions of us on a great adventure the exploration of the universe revealed by science.
 				It's time to get going again.
 				We're about to begin a journey that will take us from the infinitesimal to the infinite, from the dawn of time to the distant future.

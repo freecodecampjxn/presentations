@@ -12,11 +12,41 @@ p { color: green; }
 create a media query for a max-width 500px 
 to change the color of the text to blue 
 */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+p {
 
+    margin: 25px;
+}
+
+@media (max-width: 500px) {
+
+    p{ color: #34ebc3;}
+
+    .container p, .container{
+        display:flex;
+        flex-direction: column;
+        color: black;
+    }
+}
 
     </style>
 </head>
 <body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nemo sunt quaerat aspernatur hic nostrum consequuntur dolore nesciunt pariatur, a ipsam quia officia qui eius assumenda deleniti dicta unde molestiae asperiores eos in. Libero, aperiam! Ut nobis pariatur impedit amet praesentium optio voluptas ipsum quidem quia tempore nemo dicta necessitatibus odit dignissimos, asperiores incidunt labore a consequatur officiis molestias velit quibusdam. Porro non quos quas officiis accusamus dolorem velit laboriosam eius, illo praesentium tenetur, totam corporis nam enim voluptatum optio, quibusdam delectus iure nisi sit nihil voluptate saepe incidunt! Sit iusto molestiae eius id? Nemo possimus illum tenetur vel recusandae consectetur? Rem dignissimos deleniti nulla omnis doloribus quis fugiat. Accusantium quam, nostrum vel cupiditate adipisci id. At eaque sequi praesentium culpa quas quis corrupti expedita molestias fugiat est rem, incidunt rerum quae nam! Ad nisi dignissimos harum libero cumque similique ipsa, temporibus at. Esse, expedita? Optio unde expedita illum illo labore officia nulla tempora, corrupti suscipit sequi itaque, aperiam quia iure ipsum ducimus deleniti sint reiciendis asperiores error deserunt aliquid velit, natus nihil sunt! Tempore repudiandae inventore explicabo similique consequatur aliquam facere distinctio a quisquam possimus eos officiis quam, sed pariatur tempora architecto labore repellendus, quis obcaecati doloremque quidem excepturi soluta non enim? Rerum, doloremque magni pariatur tempore recusandae non. Vitae nihil omnis alias voluptatum sit illo sint, amet non odio nostrum iure ipsa repudiandae animi ea, autem quia ut. Dolor, recusandae fugiat, dolorem sed dicta velit quod obcaecati, corporis a labore aliquam eum officiis at totam incidunt autem animi.</p>
+    </div>
     <p>Hello freeCodeCamp Jackson!</p>
+
+
 </body>
 </html>

@@ -15,25 +15,40 @@ Assignment:
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
         <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/debug.css">
+        <link rel="stylesheet" href="styles/6_debug.css">
 		<style>
 
 article {
 	/* add grid here */
+	display: grid;
+	grid-template-columns: 1fr [start] 50px  10em  50px [end] 1fr;
+	height: 100vh;
 
 }
 
+article * {
+	grid-column: start / end;
+}
 
 
-
+@media (max-width: 600px) {
+	/* article { grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr; } */
+	article { grid-template-columns: 1fr 10% [start] 80% [end] 10% 1fr; }
+}
 
         </style>
 	</head>
     <body>
 		<!-- article -->
-		
+		<article>
+			<p class="debug-center">hello grid</p>
+		</article>
 
 		<!-- article -->
+		<article>
+			<p class="debug-center">this is an article</p>
+		</article>
+		
 	
     </body>
 </html>

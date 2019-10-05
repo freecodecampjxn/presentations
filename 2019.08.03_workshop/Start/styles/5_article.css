@@ -5,6 +5,10 @@ article {
 	padding: 0.5in 0;
 }
 
+article {
+	font-family: 'Lobster';
+}
+
 article * { grid-column: start / end; }
 
 @media (max-width: 8.5in) {

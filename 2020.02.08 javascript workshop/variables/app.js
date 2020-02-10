@@ -1,23 +1,71 @@
+// javascript is a language similar to how we use English
+
+// syntax is important
+
+// The dog eieo-ly ran down the sohop.
+
+// language in our home is differenct from work, church, or wherever
+
+// open the console and begin to do math in the constext of the web browser
+
+// name a var 
+
+// change the document.title to a value
+
+// document.
+
+// change the document.body.style.backgroundColor to a value
+// document.body.style.backgroundColor('lightblue');
 // comments
+
+// this is a comment
+
 
 /* shift + alt + a */
 
+/* class
+    -build a comment
+    - build a var
+*/ 
+
+// build a var
+
+
+
+
+
 // variable.. let is not block-scoped
+
+var eliot = 'Eliot';
+
+console.log(eliot);
+eliot = '';
+
+console.log(eliot);
+
 
 // console.log(variableName);
 
 // let example... let is block-scoped
 
+let freeCodeCamp = 'freeCodeCamp';
+
+freeCodeCamp= 'happy';
+
 // const example... const is block-scoped
+
+const library = 'Bolden Moore';
+// library = 'Eudora Welty'
 
 // change, or overwrite, the value
 
 // value reassignment
 
 // declare a variable called cow
+var cow
 
 // reassignment of cow
-
+cow= 'moo'
 // error will tell you it's not defined
 
 // camel case example
@@ -31,6 +79,14 @@
  * - variables are case sensitive
  * - underscores can be used, but they are typically not used at the beginning because other programming languages indicate private variables
  *  */ 
+
+ var bigGiantPurpleElephant = 'Dumbo';
+ bigGiantPurpleElephant;
+
+
+//  var 5monkeys = ''
+
+//  var _saveSecret = 578474874;
 
 
 // example of payPerYear, payPerMonth, payPerWeek example

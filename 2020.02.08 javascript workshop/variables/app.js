@@ -2,7 +2,7 @@
 
 // syntax is important
 
-// The dog eieo-ly ran down the sohop.
+// The dog pdido down the sohop.
 
 // language in our home is differenct from work, church, or wherever
 
@@ -10,12 +10,12 @@
 
 // name a var 
 
-// change the document.title to a value
+// change the document.title = to a value
 
 // document.
 
 // change the document.body.style.backgroundColor to a value
-// document.body.style.backgroundColor('lightblue');
+// document.body.style.backgroundColor = 'lightblue';
 // comments
 
 // this is a comment
@@ -36,12 +36,12 @@
 
 // variable.. let is not block-scoped
 
-var eliot = 'Eliot';
+var myName = 'Eliot';
 
-console.log(eliot);
-eliot = '';
+console.log(myName);
+myName = '';
 
-console.log(eliot);
+console.log(myName);
 
 
 // console.log(variableName);

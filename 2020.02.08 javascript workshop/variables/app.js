@@ -9,6 +9,7 @@
 // open the console and begin to do math in the constext of the web browser
 
 // name a var 
+var myName = 'Eliot';
 
 // change the document.title = to a value
 
@@ -19,6 +20,9 @@
 // comments
 
 // this is a comment
+// another comment
+
+
 
 
 /* shift + alt + a */
@@ -94,20 +98,27 @@ cow= 'moo'
 
 // data types 
 
-// strings
+// strings 
 
-// 'you can't do this' is broken
-// "this 'works'" is good
+// var something = 'you can't do this' //is broken
+var something = 'this "works"'//is good
 // insert the /' before the
 // number in the string
 
 // integers
+let myNumber = 5;
+console.log(typeof myNumber);
 
+let gibberish = 'aihdhpidh'
 
 // log addition
 
 
 // math operations
+
+console.log(myNumber - gibberish); // 5 and all the gibberish or ignore
+console.log(typeof myNumber - gibberish); //string
+
 
 /*  plus: + // also the concatenation symbol
     minus: -
@@ -118,12 +129,29 @@ cow= 'moo'
 */
 
 
+
+
+
+
+
 // boolean
+let thing = true;
+thing = Boolean('false');
+console.log(thing); // true
+console.log(thing); // boolean
 
 
 // concatenation in quotes
+let newGibberish = 'diuhihd';
+
+console.log("I ran into " + gibberish + " and " + newGibberish + "at freeCodeCamp!" );
+
 
 // concatenation in template literals
+newGibberish = "Bolden Moore";
+gibberish = "with friends"
+let moreGibberish = `I am here at ${newGibberish} ${gibberish}!!!`
+console.log(moreGibberish);
 
 
 //what do you think will output string + number
@@ -137,11 +165,23 @@ cow= 'moo'
 // increment "++"
 // decrement "--"
 
+let newNumber = 47;
+console.log(newNumber);
+newNumber++;
+console.log(newNumber);
+newNumber--;
+console.log(newNumber);
+
+
 // play the game what outputs in the log
 
 
 // variableName += int
 // vaiableName -= int
+
+let camperNumber = 12;
+camperNumber%=5;
+console.log(camperNumber); //2
 
 // equivalent of ++
 // shorthand for int = int + int;
@@ -155,8 +195,12 @@ cow= 'moo'
 
 
 
-// paid time off fixed rate of 5 hours per paycheck paid bi-weekly.
-// how many hours will you have accrued at the end of a year
+/*  Use JavaScript variables and math operations 
+    to calculate paid time off at a fixed rate of 5 hours per paycheck paid every two weeks.
+    How many hours will you have accrued at the end of a year?
+    Create your answer using stored variables and share your code. */
+
+
 
 
 // psuedo code can help you problem solve step by step in English statements
